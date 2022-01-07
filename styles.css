@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+.weather-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 100vw; */
+  height: 100vh;
+
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-wrapper h1{
+  text-align: center;
+}
+.header{
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-weight: 100;
+}
+
+#form{
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(0,0,0,1);
+  border-radius: 20px;
+  width: 18rem;
+  height: 2rem;
+  justify-content: space-around;
+  background-color: white;
+}
+
+#search{
+  width: 100%;
+  border: none;
+  margin-left: 12px ;
+  padding: 0px 12px ;
+  font-family: 'Poppins';
+  
+}
+input[type="text"]{
+  outline: none;
+}
+#submit{
+  border: none;
+  background-color: rgb(255, 255, 255);
+  margin-right: 12px ;
+  cursor: pointer;
+}
+.main{
+  margin-top: 12px ;
+  background: rgba(255, 255, 255, 0.122);
+  padding: 12px;
+  border-radius: 15px;
+  color: white;
+  text-shadow: 2px 2px 12px #000;
+  border: 2px solid rgba(221, 221, 221, 0.11);
+}
+.display{
+  display: flex;
+  justify-content: space-between;
+
+}
+.city{
+  display: flex;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.left .hfl{
+  margin-left: 12px;
+}
+.left .temp {
+  font-size: 3rem ;
+  font-weight: 400;
+
+}
+
+.temp span{
+  font-size: 2.8rem;
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+}
+.temp sup{
+  font-size: 1rem;
+}
+.feels_like span{
+  font-size: 1rem;
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+}
+.feels_like sup{
+  font-size: 0.5rem;
+}
