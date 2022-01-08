@@ -103,3 +103,8 @@ input[type="text"]{
 .feels_like sup{
   font-size: 0.5rem;
 }
+@media (min-width : 320px) {
+  .weather-wrapper {
+    zoom : 1.5 ; 
+  }
+}
